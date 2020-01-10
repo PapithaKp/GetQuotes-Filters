@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.Sulekha.User.UserSide.ListingPage">
+        <methods>
+          <include name="Save_To_Phone"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.Sulekha.User.UserSide.ListingPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
