@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12359" started-at="2020-01-09T09:28:19Z" finished-at="2020-01-09T09:28:32Z">
+  <suite name="Default suite" duration-ms="12324" started-at="2020-01-10T12:22:27Z" finished-at="2020-01-10T12:22:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12359" started-at="2020-01-09T09:28:19Z" finished-at="2020-01-09T09:28:32Z">
+    <test name="Default test" duration-ms="12324" started-at="2020-01-10T12:22:27Z" finished-at="2020-01-10T12:22:39Z">
       <class name="com.Sulekha.User.UserSide.ListingPage">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="startReport" is-config="true" duration-ms="169" started-at="2020-01-09T14:58:19Z" finished-at="2020-01-09T14:58:19Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="startReport" is-config="true" duration-ms="199" started-at="2020-01-10T17:52:27Z" finished-at="2020-01-10T17:52:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="setup" is-config="true" duration-ms="5952" started-at="2020-01-09T14:58:19Z" finished-at="2020-01-09T14:58:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="setup" is-config="true" duration-ms="7161" started-at="2020-01-10T17:52:27Z" finished-at="2020-01-10T17:52:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="Get_Quote" duration-ms="371" started-at="2020-01-09T14:58:25Z" finished-at="2020-01-09T14:58:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Get_Quote -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="getResult" is-config="true" duration-ms="801" started-at="2020-01-09T14:58:26Z" finished-at="2020-01-09T14:58:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Get_Quote status=SUCCESS method=ListingPage.Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="Save_To_Phone" duration-ms="4355" started-at="2020-01-09T14:58:27Z" finished-at="2020-01-09T14:58:31Z">
-          <exception class="org.junit.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<[AC Service in Ypcity]> but was:<[Get contact details]>]]>
-            </message>
+        <test-method status="FAIL" signature="Filter_listing()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Filter_listing" duration-ms="4034" started-at="2020-01-10T17:52:35Z" finished-at="2020-01-10T17:52:39Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<[AC Service in Ypcity]> but was:<[Get contact details]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.Sulekha.User.UserSide.ListingPage.Save_To_Phone(ListingPage.java:63)
+              <![CDATA[java.lang.NullPointerException
+	at com.Sulekha.User.UserSide.ListingPage.Filter_listing(ListingPage.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -66,22 +46,22 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Save_To_Phone -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="getResult" is-config="true" duration-ms="472" started-at="2020-01-09T14:58:31Z" finished-at="2020-01-09T14:58:31Z">
+        </test-method> <!-- Filter_listing -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="684" started-at="2020-01-10T17:52:39Z" finished-at="2020-01-10T17:52:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Save_To_Phone status=FAILURE method=ListingPage.Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac] output={null}]]]>
+                <![CDATA[[TestResult name=Filter_listing status=FAILURE method=ListingPage.Filter_listing()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@146ba0ac]" name="endReport" is-config="true" duration-ms="226" started-at="2020-01-09T14:58:31Z" finished-at="2020-01-09T14:58:32Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="234" started-at="2020-01-10T17:52:39Z" finished-at="2020-01-10T17:52:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

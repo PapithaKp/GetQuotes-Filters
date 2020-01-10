@@ -5,9 +5,9 @@
     <classes>
       <class name="com.Sulekha.User.UserSide.ListingPage">
         <methods>
-          <include name="Save_To_Phone"/>
           <include name="endReport"/>
           <include name="startReport"/>
+          <include name="Filter_listing"/>
           <include name="setup"/>
           <include name="getResult"/>
         </methods>

@@ -18,6 +18,10 @@ public class ListingUser {
 
 	static By imagesload = By.id("listingtabcontent");
 
+	static By filter =By.xpath("//a[@class='input sd-link f-icon'][contains(text(),'Default')]");
+	
+	static By filter_Review =By.xpath("//div[@class='sd-menu']/ul/li/a[contains(text(),'Review')]");
+	
 	// SAVE TO PHONE
 	public static WebElement Save_to_mobile(WebDriver driver) {
 		
@@ -28,4 +32,12 @@ public class ListingUser {
 	public static WebElement GetQuote(WebDriver driver) {
 		return driver.findElement(Get_Qte);
 	}
+	
+	public static WebElement filters(WebDriver driver) {
+		 driver.findElement(filter);
+		 driver.findElement(filter_Review);
+		 return null;
+}
+	
+	
 }

@@ -41,29 +41,38 @@ public class ListingPage extends ExtentReportnew  {
 		assertEquals(expectedTitle,actualTitle);
 		}
 
+//	@Test(priority = 1)
+//	public static void Get_Quote() throws IOException {
+//		
+//		String GET_1 = driver.findElement(By.xpath("//h1[contains(text(),'AC Service in Ypcity')]")).getText();
+//		ListingUser.GetQuote(driver).click();
+//		driver.switchTo().frame(0);
+//		System.out.println(GET_1);
+//		logger = extent.startTest("passTest");
+//		Assert.assertEquals(h1, GET_1);
+//	
+//	}
+//	@Test(priority = 2)
+//	public static void Save_To_Phone() throws InterruptedException, IOException {
+//		driver.navigate().refresh();
+//		Thread.sleep(4000);
+//		ListingUser.Save_to_mobile(driver).click();
+//		String Save_1 = driver.findElement(By.xpath("//h4[contains(text(),'Get contact details')]")).getText();
+//		System.out.println(Save_1);
+//		logger = extent.startTest("passTest");
+//		Assert.assertEquals(h1, Save_1);
+//		 
+//	}
 	@Test(priority = 1)
-	public static void Get_Quote() throws IOException {
-		
-		String GET_1 = driver.findElement(By.xpath("//h1[contains(text(),'AC Service in Ypcity')]")).getText();
-		ListingUser.GetQuote(driver).click();
-		driver.switchTo().frame(0);
-		System.out.println(GET_1);
-		logger = extent.startTest("passTest");
-		Assert.assertEquals(h1, GET_1);
-	
-	}
-	@Test(priority = 2)
-	public static void Save_To_Phone() throws InterruptedException, IOException {
-		driver.navigate().refresh();
+	public static void Filter_listing() throws InterruptedException, IOException {
+		//driver.navigate().refresh();
 		Thread.sleep(4000);
-		ListingUser.Save_to_mobile(driver).click();
-		String Save_1 = driver.findElement(By.xpath("//h4[contains(text(),'Get contact details')]")).getText();
-		System.out.println(Save_1);
+		ListingUser.filters(driver).click();
+		System.out.println("filter");
+		String filter_select =driver.findElement(By.xpath("//div[@class='sd-menu']/ul/li/a[contains(text(),'Review')]")).getText();
 		logger = extent.startTest("passTest");
-		Assert.assertEquals(h1, Save_1);
-		 
+		Assert.assertEquals(filter_select, "Review");
 	}
-	
 	@AfterClass
 	public void endReport() {
 		
