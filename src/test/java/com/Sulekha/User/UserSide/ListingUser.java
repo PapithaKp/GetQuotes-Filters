@@ -1,4 +1,5 @@
 package com.Sulekha.User.UserSide;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,10 +23,15 @@ public class ListingUser {
 	
 	static By filter_Review =By.xpath("//div[@class='sd-menu']/ul/li/a[contains(text(),'Review')]");
 	
+	static By  View_More =By.xpath("//a[@class='btn-t pagination loadlist']");
+	
+	static By filter_localities= By.xpath("//div[@class='filter']/ul/li/div[@class='filter-panel sa-panel']//ul[@id='ul-localities']");
+	
 	// SAVE TO PHONE
 	public static WebElement Save_to_mobile(WebDriver driver) {
 		
 		return driver.findElement(Savemob);
+	
 	}	
 
 //GET QUOTE 
@@ -34,10 +40,14 @@ public class ListingUser {
 	}
 	
 	public static WebElement filters(WebDriver driver) {
-		 driver.findElement(filter);
-		 driver.findElement(filter_Review);
-		 return null;
-}
+		return driver.findElement(filter);
+		 
+	   }
+	public static WebElement Listing_View(WebDriver driver) {
+		  return driver.findElement(View_More);
 	
-	
+	   }	
+	public static WebElement Filter_locality(WebDriver driver) {
+		  return driver.findElement(filter_localities);
 }
+	}

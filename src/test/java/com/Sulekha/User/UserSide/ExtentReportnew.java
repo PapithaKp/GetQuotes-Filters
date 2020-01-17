@@ -39,10 +39,10 @@ public class ExtentReportnew {
 	}
 
 	public static String getScreenhot(WebDriver driver, String screenshotName) throws Exception {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		//String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName 
 				+ ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
@@ -54,12 +54,18 @@ public class ExtentReportnew {
 		String screenshotPath = ExtentReportnew.getScreenhot(driver, result.getName());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			logger.log(LogStatus.FAIL, "Test Case Failed is " + result.getName());
+			Thread.sleep(1000);
 			logger.log(LogStatus.FAIL, logger.addScreenCapture(screenshotPath));
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			logger.log(LogStatus.PASS, "Test Case Skipped is " + result.getName());
+			Thread.sleep(1000);
 			logger.log(LogStatus.PASS, logger.addScreenCapture(screenshotPath));
-
-		}
-		extent.endTest(logger);
 	}
+		else {
+			logger.log(LogStatus.PASS, "Test Case Skipped is " + result.getName());
+			Thread.sleep(1000);
+			logger.log(LogStatus.PASS, logger.addScreenCapture(screenshotPath));
+		}
+	}
+
 }
