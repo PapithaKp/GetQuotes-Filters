@@ -104,19 +104,17 @@ public class ListingPage extends ExtentReportnew {
 		driver.navigate().refresh();
 JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("scroll(0,1600);");
-		WebElement locality_downarrow=driver.findElement(By.xpath("//div[@class='filter']/ul/li/div[@class='filter-panel sa-panel']//ul[@id='ul-localities']"));
-		String down_arrow =locality_downarrow.getAttribute("class");
-		System.out.println(down_arrow);
-	if(	ListingUser.Filter_locality(driver).isDisplayed()) {
-		System.out.println("Locality option is enabled for city page");
+		WebElement locality_downarrow=driver.findElement(By.xpath("//div[@class='filter']/ul/li//strong[contains(text(),'Locality')]"));
+		locality_downarrow.click();
+		if(	ListingUser.Filter_locality(driver).isDisplayed()) {
+		System.out.println(driver.findElement(By.xpath("//div[@class='filter']/ul/li/div[@class='filter-panel sa-panel']//ul[@id='ul-localities']/li")).getText());
+			System.out.println("Locality option is enabled for city page");
 		logger = extent.startTest("Locality section - Visible in city page");
 		}else {
 			System.out.println("Locality section is not displaye");
 			logger = extent.startTest("Locality section - Not-Visible in city page\"");
 		}
-		
-		
-	}
+		}
 
 	@AfterMethod
 	public void endReport() {

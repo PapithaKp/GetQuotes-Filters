@@ -2,24 +2,28 @@
 <testng-results skipped="0" failed="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32601" started-at="2020-01-17T06:09:23Z" finished-at="2020-01-17T06:09:56Z">
+  <suite name="Default suite" duration-ms="34875" started-at="2020-01-17T12:21:15Z" finished-at="2020-01-17T12:21:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32601" started-at="2020-01-17T06:09:23Z" finished-at="2020-01-17T06:09:56Z">
+    <test name="Default test" duration-ms="34875" started-at="2020-01-17T12:21:15Z" finished-at="2020-01-17T12:21:50Z">
       <class name="com.Sulekha.User.UserSide.ListingPage">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="startReport" is-config="true" duration-ms="176" started-at="2020-01-17T11:39:23Z" finished-at="2020-01-17T11:39:24Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="startReport" is-config="true" duration-ms="183" started-at="2020-01-17T17:51:15Z" finished-at="2020-01-17T17:51:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="setup" is-config="true" duration-ms="5319" started-at="2020-01-17T11:39:24Z" finished-at="2020-01-17T11:39:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="setup" is-config="true" duration-ms="6941" started-at="2020-01-17T17:51:15Z" finished-at="2020-01-17T17:51:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Get_Quote" duration-ms="403" started-at="2020-01-17T11:39:29Z" finished-at="2020-01-17T11:39:29Z">
+        <test-method status="PASS" signature="Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Get_Quote" duration-ms="435" started-at="2020-01-17T17:51:22Z" finished-at="2020-01-17T17:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Get_Quote -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1581" started-at="2020-01-17T11:39:29Z" finished-at="2020-01-17T11:39:31Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="263" started-at="2020-01-17T17:51:23Z" finished-at="2020-01-17T17:51:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1519" started-at="2020-01-17T17:51:23Z" finished-at="2020-01-17T17:51:24Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Save_To_Phone" duration-ms="4482" started-at="2020-01-17T11:39:31Z" finished-at="2020-01-17T11:39:35Z">
+        <test-method status="FAIL" signature="Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Save_To_Phone" duration-ms="4379" started-at="2020-01-17T17:51:24Z" finished-at="2020-01-17T17:51:29Z">
           <exception class="org.junit.ComparisonFailure">
             <message>
               <![CDATA[expected:<[AC Service in Ypcity]> but was:<[Get contact details]>]]>
@@ -39,7 +43,7 @@
               <![CDATA[org.junit.ComparisonFailure: expected:<[AC Service in Ypcity]> but was:<[Get contact details]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.Sulekha.User.UserSide.ListingPage.Save_To_Phone(ListingPage.java:66)
+	at com.Sulekha.User.UserSide.ListingPage.Save_To_Phone(ListingPage.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,7 +74,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Save_To_Phone -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1451" started-at="2020-01-17T11:39:35Z" finished-at="2020-01-17T11:39:37Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="29" started-at="2020-01-17T17:51:29Z" finished-at="2020-01-17T17:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1425" started-at="2020-01-17T17:51:29Z" finished-at="2020-01-17T17:51:30Z">
           <params>
             <param index="0">
               <value>
@@ -81,29 +89,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="Filter_listing()[pri:3, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Filter_listing" duration-ms="4195" started-at="2020-01-17T11:39:37Z" finished-at="2020-01-17T11:39:41Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="Filter_listing()[pri:3, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Filter_listing" duration-ms="4286" started-at="2020-01-17T17:51:30Z" finished-at="2020-01-17T17:51:35Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[unknown error: Element <a class="input sd-link f-icon" tabindex="0">...</a> is not clickable at point (1634, 789). Other element would receive the click: <img src="//sulcdn.azureedge.net/content/c/bank-discounts/images/payment-promo-1.jpg">
+              <![CDATA[element not visible
   (Session info: chrome=79.0.3945.117)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 28 milliseconds
+Command duration or timeout: 21 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'DESK-1986', ip: '192.168.4.204', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir6604_6222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 698d549f4a66c8c9e432be466ad9c82c]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir10236_11965}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 178e223eccf260c6b9084fcdab78b5e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a class="input sd-link f-icon" tabindex="0">...</a> is not clickable at point (1634, 789). Other element would receive the click: <img src="//sulcdn.azureedge.net/content/c/bank-discounts/images/payment-promo-1.jpg">
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=79.0.3945.117)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 28 milliseconds
+Command duration or timeout: 21 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'DESK-1986', ip: '192.168.4.204', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir6604_6222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 698d549f4a66c8c9e432be466ad9c82c
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir10236_11965}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 178e223eccf260c6b9084fcdab78b5e0
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -113,7 +121,7 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.Sulekha.User.UserSide.ListingPage.Filter_listing(ListingPage.java:76)
+	at com.Sulekha.User.UserSide.ListingPage.Filter_listing(ListingPage.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,11 +148,15 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Filter_listing -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1470" started-at="2020-01-17T11:39:41Z" finished-at="2020-01-17T11:39:42Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="19" started-at="2020-01-17T17:51:35Z" finished-at="2020-01-17T17:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1475" started-at="2020-01-17T17:51:35Z" finished-at="2020-01-17T17:51:36Z">
           <params>
             <param index="0">
               <value>
@@ -155,11 +167,15 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Listing_ViewMore()[pri:4, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Listing_ViewMore" duration-ms="9241" started-at="2020-01-17T11:39:42Z" finished-at="2020-01-17T11:39:52Z">
+        <test-method status="PASS" signature="Listing_ViewMore()[pri:4, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Listing_ViewMore" duration-ms="9282" started-at="2020-01-17T17:51:36Z" finished-at="2020-01-17T17:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Listing_ViewMore -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1375" started-at="2020-01-17T11:39:52Z" finished-at="2020-01-17T11:39:53Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="16" started-at="2020-01-17T17:51:45Z" finished-at="2020-01-17T17:51:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1396" started-at="2020-01-17T17:51:45Z" finished-at="2020-01-17T17:51:47Z">
           <params>
             <param index="0">
               <value>
@@ -170,11 +186,15 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Filter_locality()[pri:5, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Filter_locality" duration-ms="1184" started-at="2020-01-17T11:39:53Z" finished-at="2020-01-17T11:39:54Z">
+        <test-method status="PASS" signature="Filter_locality()[pri:5, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="Filter_locality" duration-ms="1736" started-at="2020-01-17T17:51:47Z" finished-at="2020-01-17T17:51:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Filter_locality -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1447" started-at="2020-01-17T11:39:54Z" finished-at="2020-01-17T11:39:56Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="21" started-at="2020-01-17T17:51:49Z" finished-at="2020-01-17T17:51:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="getResult" is-config="true" duration-ms="1450" started-at="2020-01-17T17:51:49Z" finished-at="2020-01-17T17:51:50Z">
           <params>
             <param index="0">
               <value>
@@ -185,10 +205,6 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Sulekha.User.UserSide.ListingPage@13a5fe33]" name="endReport" is-config="true" duration-ms="254" started-at="2020-01-17T11:39:56Z" finished-at="2020-01-17T11:39:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
       </class> <!-- com.Sulekha.User.UserSide.ListingPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

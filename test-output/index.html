@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Windows\Temp\testng-eclipse--1549834246\testng-customsuite.xml</span>
+                    <span>C:\Windows\Temp\testng-eclipse-668802606\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -156,15 +156,15 @@
                   <a name="Filter_listing">
                   </a> <!-- Filter_listing -->
                   <span class="method-name">Filter_listing</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;input sd-link f-icon&quot; tabindex=&quot;0&quot;&gt;...&lt;/a&gt; is not clickable at point (1634, 789). Other element would receive the click: &lt;img src=&quot;//sulcdn.azureedge.net/content/c/bank-discounts/images/payment-promo-1.jpg&quot;&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=79.0.3945.117)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 28 milliseconds
+Command duration or timeout: 21 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;DESK-1986&apos;, ip: &apos;192.168.4.204&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir6604_6222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 698d549f4a66c8c9e432be466ad9c82c
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Windows\TEMP\scoped_dir10236_11965}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.117, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 178e223eccf260c6b9084fcdab78b5e0
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -174,7 +174,7 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.Sulekha.User.UserSide.ListingPage.Filter_listing(ListingPage.java:76)
+	at com.Sulekha.User.UserSide.ListingPage.Filter_listing(ListingPage.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -211,7 +211,7 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
                   <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;[AC Service in Ypcity]&gt; but was:&lt;[Get contact details]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.Sulekha.User.UserSide.ListingPage.Save_To_Phone(ListingPage.java:66)
+	at com.Sulekha.User.UserSide.ListingPage.Save_To_Phone(ListingPage.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -274,7 +274,7 @@ Session ID: 698d549f4a66c8c9e432be466ad9c82c
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Windows\Temp\testng-eclipse--1549834246\testng-customsuite.xml</span>
+            <span class="header-content">C:\Windows\Temp\testng-eclipse-668802606\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -327,28 +327,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Listing_ViewMore')
 data.setCell(0, 2, 'com.Sulekha.User.UserSide.ListingPage')
-data.setCell(0, 3, 9241);
+data.setCell(0, 3, 9282);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Save_To_Phone')
 data.setCell(1, 2, 'com.Sulekha.User.UserSide.ListingPage')
-data.setCell(1, 3, 4482);
+data.setCell(1, 3, 4379);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Filter_listing')
 data.setCell(2, 2, 'com.Sulekha.User.UserSide.ListingPage')
-data.setCell(2, 3, 4195);
+data.setCell(2, 3, 4286);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Filter_locality')
 data.setCell(3, 2, 'com.Sulekha.User.UserSide.ListingPage')
-data.setCell(3, 3, 1184);
+data.setCell(3, 3, 1736);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Get_Quote')
 data.setCell(4, 2, 'com.Sulekha.User.UserSide.ListingPage')
-data.setCell(4, 3, 403);
+data.setCell(4, 3, 435);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -381,56 +381,72 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">183 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Get_Quote</span>
-                <span class="method-start">5501 ms</span>
+                <span class="method-start">7128 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">7564 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Get_Quote status=SUCCESS method=ListingPage.Get_Quote()[pri:1, instance:com.Sulekha...)</span>
-                <span class="method-start">5905 ms</span>
+                <span class="method-start">7827 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Save_To_Phone</span>
-                <span class="method-start">7486 ms</span>
+                <span class="method-start">9346 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">13728 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Save_To_Phone status=FAILURE method=ListingPage.Save_To_Phone()[pri:2, instance:com...)</span>
-                <span class="method-start">11973 ms</span>
+                <span class="method-start">13757 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Filter_listing</span>
-                <span class="method-start">13424 ms</span>
+                <span class="method-start">15182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">19470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Filter_listing status=FAILURE method=ListingPage.Filter_listing()[pri:3, instance:c...)</span>
-                <span class="method-start">17621 ms</span>
+                <span class="method-start">19489 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Listing_ViewMore</span>
-                <span class="method-start">19091 ms</span>
+                <span class="method-start">20964 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">30254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Listing_ViewMore status=SUCCESS method=ListingPage.Listing_ViewMore()[pri:4, instan...)</span>
-                <span class="method-start">28333 ms</span>
+                <span class="method-start">30270 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Filter_locality</span>
-                <span class="method-start">29709 ms</span>
+                <span class="method-start">31666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Filter_locality status=SUCCESS method=ListingPage.Filter_locality()[pri:5, instance...)</span>
-                <span class="method-start">30894 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">32341 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">33404 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=Filter_locality status=SUCCESS method=ListingPage.Filter_locality()[pri:5, instance...)</span>
+                <span class="method-start">33425 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

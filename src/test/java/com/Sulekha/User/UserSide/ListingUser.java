@@ -25,7 +25,7 @@ public class ListingUser {
 	
 	static By  View_More =By.xpath("//a[@class='btn-t pagination loadlist']");
 	
-	static By filter_localities= By.xpath("//div[@class='filter']/ul/li/div[@class='filter-panel sa-panel']//ul[@id='ul-localities']");
+	static By filter_localities= By.xpath("//div[@class='filter']/ul/li/div[@class='filter-panel sa-panel']//ul[@id='ul-localities']/li");
 	
 	// SAVE TO PHONE
 	public static WebElement Save_to_mobile(WebDriver driver) {
@@ -44,7 +44,10 @@ public class ListingUser {
 		 
 	   }
 	public static WebElement Listing_View(WebDriver driver) {
-		  return driver.findElement(View_More);
+		String loc_1= driver.findElement(View_More).toString(); 
+		
+		return driver.findElement(View_More);
+		  
 	
 	   }	
 	public static WebElement Filter_locality(WebDriver driver) {
