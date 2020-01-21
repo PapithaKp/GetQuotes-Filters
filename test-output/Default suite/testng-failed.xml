@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Sulekha.User.UserSide.ListingPage">
+      <class name="com.Sulekha.User.UserSide.Need_Page">
         <methods>
-          <include name="Save_To_Phone"/>
-          <include name="endReport"/>
-          <include name="startReport"/>
-          <include name="Filter_listing"/>
           <include name="setup"/>
+          <include name="startReport"/>
+          <include name="filter_india_page"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.Sulekha.User.UserSide.ListingPage -->
+      </class> <!-- com.Sulekha.User.UserSide.Need_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

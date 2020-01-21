@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -31,30 +32,29 @@ public class ListingPage extends ExtentReportnew {
 
 	// static WebDriver driver;
 	static String h1 = "AC Service in Ypcity";
-
-	@BeforeClass
+	static JavascriptExecutor jse = (JavascriptExecutor) driver;
+	
+	@BeforeClass(alwaysRun = true)
 	public static void setup() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "D:\\ALLMY\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://www.sulekha.com/ac-services/ypcity");
-		logger = extent.startTest("SETUP");
+		ListingUser.Site_url(driver);
 		String actualTitle = driver.getTitle();
-		String expectedTitle = "Best AC Service in Ypcity, Top Air Conditioner Service in Ypcity | Sulekha Ypcity";
-		assertEquals(expectedTitle, actualTitle);
+		logger = extent.startTest("SETUP");
+		System.out.println(actualTitle);
 	}
 
 	@Test(priority = 1)
 	public static void Get_Quote() throws IOException {
 
-		String GET_1 = driver.findElement(By.xpath("//h1[contains(text(),'AC Service in Ypcity')]")).getText();
 		ListingUser.GetQuote(driver).click();
 		driver.switchTo().frame(0);
-		System.out.println(GET_1);
-		logger = extent.startTest("GET QUOTE");
-		Assert.assertEquals(h1, GET_1);
-	}
+	logger = extent.startTest("GET QUOTE");
+	ListingUser.LCF_selection(driver);	
+	
+		}	
 
 	@Test(priority = 2)
 	public static void Save_To_Phone() throws InterruptedException, IOException {
@@ -71,7 +71,6 @@ public class ListingPage extends ExtentReportnew {
 	public static void Filter_listing() throws InterruptedException, IOException {
 		driver.navigate().refresh();
 		Thread.sleep(4000);
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("scroll(0,600);");
 		driver.findElement(By.xpath("//div[@class='bankoffer active']//span[@class='close']")).click();
 		ListingUser.filters(driver).click();
@@ -86,7 +85,6 @@ public class ListingPage extends ExtentReportnew {
 	public static void Listing_ViewMore() throws InterruptedException, IOException {
 		driver.navigate().refresh();
 		Thread.sleep(4000);
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("scroll(0,2500);");
 		ListingUser.Listing_View(driver).click();
 		Thread.sleep(5000);
@@ -102,7 +100,6 @@ public class ListingPage extends ExtentReportnew {
 	@Test(priority = 5)
 	public static void Filter_locality() throws InterruptedException, IOException {
 		driver.navigate().refresh();
-JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("scroll(0,1600);");
 		WebElement locality_downarrow=driver.findElement(By.xpath("//div[@class='filter']/ul/li//strong[contains(text(),'Locality')]"));
 		locality_downarrow.click();
