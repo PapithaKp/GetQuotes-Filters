@@ -11,16 +11,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Need_Page extends ExtentReportnew {
-	
-	 static JavascriptExecutor js =(JavascriptExecutor)driver;
-	
+
+	static JavascriptExecutor js = (JavascriptExecutor) driver;
+
 	@BeforeClass(alwaysRun = true)
 	public static void setup() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "D:\\ALLMY\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://www4.sulekha.com/stretch-ceiling-repair-services/");
+		driver.get("https://www.sulekha.com/stretch-ceiling-repair-services/");
 		String actualTitle = driver.getTitle();
 		logger = extent.startTest("SETUP");
 		System.out.println(actualTitle);
@@ -43,6 +43,7 @@ public class Need_Page extends ExtentReportnew {
 		String city_filter_section = driver.findElement(By.xpath("//div[@class='filter']/ul/li[1]")).getText();
 		if (city_filter_section.contains("Chennai")) {
 			System.out.println("City option is displayed");
+			logger=extent.startTest(" Filter - City selection is enabled");
 		}else
 			System.out.println("Filter section , city selection is not displayed");
 	}
@@ -52,8 +53,8 @@ public class Need_Page extends ExtentReportnew {
 
 		ListingUser.GetQuote(driver).click();
 		driver.switchTo().frame(0);
-	logger = extent.startTest("GET QUOTE");
-	ListingUser.LCF_selection(driver);	
+	   logger = extent.startTest("GET QUOTE");
+	     ListingUser.LCF_selection(driver);	
 	
 		}	
 
@@ -66,11 +67,11 @@ public class Need_Page extends ExtentReportnew {
 		System.out.println(Save_1);
 		logger = extent.startTest("SAVE TO PHONE");
 		Assert.assertEquals("Get contact details", Save_1);
-		//Form submission
-	   ListingUser.SAVE_TO_FONE(driver);
-	
+		// Form submission
+		ListingUser.SAVE_TO_FONE(driver);
+		driver.findElement(By.id("otp-1")).click();
+		 driver.findElement(By.id("otp-1")).sendKeys(OTP_Page.otpscreen(driver));
+
 	}
 
-
 }
-	

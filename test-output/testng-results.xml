@@ -1,59 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79717" started-at="2020-01-21T05:09:15Z" finished-at="2020-01-21T05:10:35Z">
+  <suite name="Default suite" duration-ms="43591" started-at="2020-01-27T10:10:44Z" finished-at="2020-01-27T10:11:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79717" started-at="2020-01-21T05:09:15Z" finished-at="2020-01-21T05:10:35Z">
+    <test name="Default test" duration-ms="43591" started-at="2020-01-27T10:10:44Z" finished-at="2020-01-27T10:11:28Z">
       <class name="com.Sulekha.User.UserSide.Need_Page">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="startReport" is-config="true" duration-ms="174" started-at="2020-01-21T10:39:15Z" finished-at="2020-01-21T10:39:15Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="startReport" is-config="true" duration-ms="170" started-at="2020-01-27T15:40:44Z" finished-at="2020-01-27T15:40:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="setup" is-config="true" duration-ms="32726" started-at="2020-01-21T10:39:15Z" finished-at="2020-01-21T10:39:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="setup" is-config="true" duration-ms="11644" started-at="2020-01-27T15:40:44Z" finished-at="2020-01-27T15:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="Get_Quote" duration-ms="19781" started-at="2020-01-21T10:39:48Z" finished-at="2020-01-21T10:40:08Z">
+        <test-method status="PASS" signature="need_india_page()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="need_india_page" duration-ms="698" started-at="2020-01-27T15:40:56Z" finished-at="2020-01-27T15:40:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Get_Quote -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1851" started-at="2020-01-21T10:40:08Z" finished-at="2020-01-21T10:40:10Z">
+        </test-method> <!-- need_india_page -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="2208" started-at="2020-01-27T15:40:57Z" finished-at="2020-01-27T15:40:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Get_Quote status=SUCCESS method=Need_Page.Get_Quote()[pri:1, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=need_india_page status=SUCCESS method=Need_Page.need_india_page()[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="Save_To_Phone" duration-ms="16701" started-at="2020-01-21T10:40:10Z" finished-at="2020-01-21T10:40:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Save_To_Phone -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1414" started-at="2020-01-21T10:40:26Z" finished-at="2020-01-21T10:40:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Save_To_Phone status=SUCCESS method=Need_Page.Save_To_Phone()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="filter_india_page()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="filter_india_page" duration-ms="5062" started-at="2020-01-21T10:40:28Z" finished-at="2020-01-21T10:40:33Z">
+        <test-method status="PASS" signature="filter_india_page()[pri:1, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="filter_india_page" duration-ms="5079" started-at="2020-01-27T15:40:59Z" finished-at="2020-01-27T15:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filter_india_page -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1991" started-at="2020-01-21T10:40:33Z" finished-at="2020-01-21T10:40:35Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1965" started-at="2020-01-27T15:41:04Z" finished-at="2020-01-27T15:41:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filter_india_page status=SUCCESS method=Need_Page.filter_india_page()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=filter_india_page status=SUCCESS method=Need_Page.filter_india_page()[pri:1, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="Get_Quote()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="Get_Quote" duration-ms="1426" started-at="2020-01-27T15:41:06Z" finished-at="2020-01-27T15:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Quote -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1535" started-at="2020-01-27T15:41:07Z" finished-at="2020-01-27T15:41:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Get_Quote status=SUCCESS method=Need_Page.Get_Quote()[pri:2, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="Save_To_Phone()[pri:3, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="Save_To_Phone" duration-ms="17302" started-at="2020-01-27T15:41:09Z" finished-at="2020-01-27T15:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Save_To_Phone -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Sulekha.User.UserSide.Need_Page@527740a2]" name="getResult" is-config="true" duration-ms="1547" started-at="2020-01-27T15:41:26Z" finished-at="2020-01-27T15:41:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Save_To_Phone status=SUCCESS method=Need_Page.Save_To_Phone()[pri:3, instance:com.Sulekha.User.UserSide.Need_Page@527740a2] output={null}]]]>
               </value>
             </param>
           </params>

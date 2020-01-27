@@ -36,5 +36,6 @@ public class Listing_GetQuote extends ExtentReportnew {
 		
 		
 		
+		
 	}
 }
