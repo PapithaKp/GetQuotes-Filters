@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Sulekha.User.UserSide.ExtentReportnew"/>
+      <class name="com.Sulekha.User.UserSide.Need_Page"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

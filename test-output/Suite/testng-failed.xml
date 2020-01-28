@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.Sulekha.User.UserSide.ExtentReportnew">
+      <class name="com.Sulekha.User.UserSide.Need_Page">
         <methods>
-          <include name="skip"/>
+          <include name="setup"/>
+          <include name="teardown"/>
           <include name="startReport"/>
-          <include name="fail"/>
-          <include name="pass"/>
+          <include name="Save_To_Phone"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- com.Sulekha.User.UserSide.ExtentReportnew -->
+      </class> <!-- com.Sulekha.User.UserSide.Need_Page -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

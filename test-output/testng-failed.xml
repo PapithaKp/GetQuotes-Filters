@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
       <class name="com.Sulekha.User.UserSide.Need_Page">
         <methods>
           <include name="setup"/>
-          <include name="Get_Quote"/>
-          <include name="need_india_page"/>
+          <include name="teardown"/>
           <include name="startReport"/>
           <include name="Save_To_Phone"/>
-          <include name="filter_india_page"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.Sulekha.User.UserSide.Need_Page -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

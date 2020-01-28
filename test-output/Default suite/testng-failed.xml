@@ -6,11 +6,10 @@
       <class name="com.Sulekha.User.UserSide.Need_Page">
         <methods>
           <include name="setup"/>
-          <include name="Get_Quote"/>
-          <include name="need_india_page"/>
+          <include name="teardown"/>
           <include name="startReport"/>
           <include name="Save_To_Phone"/>
-          <include name="filter_india_page"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.Sulekha.User.UserSide.Need_Page -->
     </classes>

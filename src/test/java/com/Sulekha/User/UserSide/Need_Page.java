@@ -70,8 +70,8 @@ public class Need_Page extends ExtentReportnew {
 		// Form submission
 		ListingUser.SAVE_TO_FONE(driver);
 		driver.findElement(By.id("otp-1")).click();
-		 driver.findElement(By.id("otp-1")).sendKeys(OTP_Page.otpscreen(driver));
-
+		driver.findElement(By.id("otp-1")).sendKeys(OTP_Page.otpscreen(driver));
+        logger=extent.startTest("Thank You screen");
 	}
 
 }
