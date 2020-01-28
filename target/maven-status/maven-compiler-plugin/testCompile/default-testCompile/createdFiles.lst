@@ -1,0 +1,8 @@
+com\Sulekha\User\UserSide\ListingUser.class
+com\Sulekha\User\UserSide\ListingPage.class
+com\Sulekha\User\UserSide\Screenshots.class
+com\Sulekha\User\UserSide\Listing_GetQuote.class
+com\Sulekha\User\UserSide\ExtentReportnew.class
+com\Sulekha\User\UserSide\OTP_Page.class
+com\Sulekha\User\UserSide\Need_Page.class
+com\Sulekha\User\UserSide\AppTest.class
