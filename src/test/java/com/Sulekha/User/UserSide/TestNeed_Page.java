@@ -1,16 +1,21 @@
 package com.Sulekha.User.UserSide;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Need_Page extends ExtentReportnew {
+public class TestNeed_Page extends ExtentReportnew {
 
 	static JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -66,7 +71,7 @@ public class Need_Page extends ExtentReportnew {
 		String Save_1 = driver.findElement(By.xpath("//h4[contains(text(),'Get contact details')]")).getText();
 		System.out.println(Save_1);
 		logger = extent.startTest("SAVE TO PHONE");
-		Assert.assertEquals("Get contact details", Save_1);
+		AssertJUnit.assertEquals("Get contact details", Save_1);
 		// Form submission
 		ListingUser.SAVE_TO_FONE(driver);
 		driver.findElement(By.id("otp-1")).click();

@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.Sulekha.User.UserSide.Need_Page"/>
-    </classes>
+    <packages>
+      <package name="com.Sulekha.User.UserSide"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
